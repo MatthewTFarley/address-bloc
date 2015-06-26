@@ -67,7 +67,7 @@ class MenuController
     return if n == "q"
     if n =~ /[[:alpha:]]/
       puts "Invalid entry. Try again."
-      view_entry
+      return view_entry
     end
 
     n = n.to_i
